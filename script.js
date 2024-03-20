@@ -1,18 +1,12 @@
 function fibonacci(num) {
 // your code here
-	if (num === 0) return 0;
-
-	let prev1 = 0;
-	let prev2 = 1;
-	let curr;
-
-	for (let i = 2; i <= n; i++) {
-		curr = prev1 + prev2;
-		prev1 = prev2;
-		prev2 = curr;
+	const fib = [0, 1];
+	for (let i = 2; i < n; i++) {
+		fib[i] = fib[i - 1] + fib[i - 2]
 	}
-		return prev2;
+	return fib;
 }
-console.log(solution(num));
+	console.log(fibonacci(1));
+	console.log(fibonacci(5));
 
 module.exports = fibonacci;
